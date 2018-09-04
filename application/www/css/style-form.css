@@ -1,0 +1,96 @@
+.form{
+	background:#111;
+	color:green;
+	font-family:verdana;
+	font-weight:0.9em;
+	width:1000px;
+	padding:15px;
+	margin:0 auto;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #111;
+}
+.form h2, .form .button button{
+	border:1px solid #42596d;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	color:#fff;
+	font-weight:normal;
+	font-size:1.2em;
+	background: #1a1f24;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#42596d', endColorstr='#1a1f24'); /* for IE */
+	background-image: -moz-radial-gradient(center,0px,center,500px,from(#42596d),to(#1a1f24));
+	background-image: -webkit-gradient(radial,center top,0,center top,500,from(#42596d),to(#1a1f24));
+	-webkit-transition: border .6s ease-in;
+    -moz-transition: border .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+}
+.form h2{
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	margin:0 auto 20px auto;
+	padding:10px;
+}
+.form div{
+	margin:10px 0 15px 0;
+}
+.form div label{
+	float:left;
+	margin-right:10px;
+	margin-top:5px;
+	text-align:left;
+	display:block;
+	width:150px;
+}
+.form div input{
+	background: #000000;
+	width:270px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	height:25px;
+	-webkit-transition: all .6s ease-in;
+	-moz-transition: all 1s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+}
+.form div input:hover{
+	border:1px solid #999;
+	
+}
+.form div input:focus{
+	border:1px solid #42596d;
+	background: #1a1f24;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#42596d', endColorstr='#1a1f24'); /* for IE */
+	background-image: -moz-radial-gradient(center,0px,center,500px,from(#42596d),to(#1a1f24));
+	background-image: -webkit-gradient(radial,center top,0,center top,500,from(#42596d),to(#1a1f24));
+	color:green;
+}
+.form .button{
+	text-align:center;
+	margin-top:30px;
+	margin-right:15px;
+}
+.form .button button{
+	cursor:pointer;
+	width:100px;
+	height:40px;
+
+}
+.form .button button:hover{
+	border:1px solid #fff;
+}
+.form .container{
+	text-align: center;
+}
+.form option{
+	color: #000000;
+}
+
+
+

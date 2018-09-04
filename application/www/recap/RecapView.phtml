@@ -1,0 +1,109 @@
+
+<h2><i class="fas fa-check"></i> Payer la commande</h2>
+
+<div class="recapUser">
+            
+<table class="generic-table meal-list" >
+   
+    <thead>
+      <tr>
+          <th>Client</th>          
+        
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr>
+            <td>
+             <?php echo $_SESSION["name"]; ?>
+            </td>         
+      </tr>
+      <tr>
+            <td>
+                <?php echo $_SESSION["address"] ; ?>
+            </td>
+
+      </tr>
+      <tr>
+            <td>
+                <?php echo $_SESSION["zipCod"] ; ?>
+            </td>
+      </tr>
+      <tr>
+            <td>
+                <?php echo $_SESSION["country"] ; ?>
+            </td>
+      </tr>
+
+      
+      </tbody>
+</table>
+
+</div>
+
+
+<form class="form">
+	<div class="container">
+	<fieldset>
+		<legend>recapitulatif de la commande</legend>
+		
+<table class="generic-table meal-list" >
+   
+    <thead>
+      <tr>
+          <th>Nom</th>
+          <th>Description</th>
+          <th>Quantité</th>
+          <th>Prix Unitaire</th>
+          <th>Prix Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php foreach($RecapFoundMeals as $RecapFoundMeal): ?>
+      <tr>
+            <td>
+               <img src=" <?php echo $wwwUrl.'/images/meals/'.$RecapFoundMeal['photo']; ?>" width="100" height="100">
+            </td>
+
+             <td>
+                <?php echo $RecapFoundMeal["description"]; ?>
+            </td>
+
+            <td>
+                <?php echo $RecapFoundMeal["quantityOrdered"]; ?>
+            </td>
+
+
+            <td>
+                <?php echo $RecapFoundMeal["salePrice"]; ?>
+            </td>
+
+      <?php endforeach;  ?>
+            <td>
+                <?php echo $RecapFoundOne["totalAmount"]; ?>
+            </td>
+      </tr>
+
+      
+      </tbody>
+</table>
+                        
+	</fieldset>
+	</div>
+	<hr>
+	<h3>Merci de bien vouloir procéder au paiement de la commande </h3>
+	<div class="button"><button  type="button" id="payer">Payer</button></div>
+	<div class="button"><button  type="button" id="annuler">Annuler</button></div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+

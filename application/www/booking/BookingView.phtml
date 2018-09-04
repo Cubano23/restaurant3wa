@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Reservation</title>
+</head>
+<body>
+
+	<main>
+		<section>
+			<form name="booking" method="post" action="<?= $requestUrl; ?>/booking" class="form">
+				<fieldset>
+				<legend>Reservation</legend>
+			       <div><label>Date de réservation : </label><input type="date" name="BookingDate" value="" /></div>
+			       <div><label>Heure:</label><input type="time" name="BookingTime"></div>
+			       <div><label>Nombre de couverts :</label><input name="NumberOfSeats" type="number"></div>
+			       <div class="button"><button type="submit" >Valider</button></div>
+       			</fieldset>
+   </form>
+		</section>
+	</main>
+
+</body>
+</html>

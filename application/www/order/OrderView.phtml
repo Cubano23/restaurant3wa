@@ -1,0 +1,63 @@
+
+
+<h1>Votre commande ici</h1>
+<form class="form">
+		<fieldset>		
+			<legend>Ajouter un article</legend>
+			<div><select id="selected-meal">
+
+			  <?php foreach($results as $result): ?> 
+			  	
+				<option value="<?= $result['id'] ?>" name="<?= $result['name'] ?> ">
+					<?= $result['name'] ?>
+				</option>
+			<?php endforeach ?>
+			</select></div>
+			<div>
+	
+			<img id="image" width="100" height="100" />
+			<p id="description"></p>
+			<p id="prix"></p>
+
+			<div><label class="hide">Quantité:</label><input type="number" name="quantite" id="quantite"></div>
+			<div class="button"><button  type="button" id="ajouter">Ajouter</button></div>
+	
+
+			</div>
+	</fieldset>
+</form>
+<hr>
+<form class="form">
+	<div class="container">
+	<fieldset>
+		<legend>recapitulatif de la commande</legend>
+
+		 <table>
+		 	
+            	<thead>
+            		<tr>
+            	        
+            			<th>|  Produit  |</th>
+            			<th>  Quantité  |</th>
+            			<th>  Prix Unitaire  |</th>            			
+            			<th>  Prix Total  |</th>
+            			
+            		</tr>
+            	</thead>
+            	<tbody id="tableauCommande">
+            	
+            	</tbody>
+                  </table>
+
+                
+             
+             <section id="affiche"></section> 
+            
+
+               
+            
+	</fieldset>
+	</div>
+	<div class="button"><button  type="button" id="validate">Valider</button></div>
+	<div class="button"><button  type="button" id="cancel">Annuler</button></div>
+</form>
